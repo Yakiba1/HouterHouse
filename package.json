@@ -1,0 +1,24 @@
+{
+  "name": "houterhouse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yakiba1/HouterHouse.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yakiba1/HouterHouse/issues"
+  },
+  "homepage": "https://github.com/Yakiba1/HouterHouse#readme",
+  "dependencies": {
+    "sass": "^1.62.1"
+  }
+}
