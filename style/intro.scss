@@ -1,0 +1,137 @@
+@import "warielbels";
+.intro__bg {
+  height: 740px;
+  width: 100%;
+  position: absolute;
+  right: 0%;
+  top: 0;
+  z-index: -1;
+}
+
+.intro__frame {
+  width: 495px;
+  height: 458px;
+  margin-top: 100px;
+
+
+}
+
+.intro__title {
+font-weight: $font-weight-semiBld;
+  font-size: 40px;
+  margin-bottom: 24px;
+  color: $color-primary;
+  text-shadow: -1px -1px 0 $color-primary,
+  1px -1px 0 $color-primary,
+  -1px 1px 0 $color-primary,
+  1px 1px 0 $color-primary;
+
+}
+.intro__title-word {
+  color: #FFFFFF;
+
+}
+
+.intro__description {
+  color: $color-gray;
+  line-height: 1.75;
+
+}
+
+.intro__search {
+  width: 496px;
+  height: 56px;
+  border-radius: 32px;
+  border: 1px solid #E0E3EB;
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.intro__search-input {
+  border: none;
+  width: 316px;
+  height: 22px;
+  outline: none;
+  margin-right: 16px;
+
+}
+
+.intro__search-button {
+  width: 109px;
+  height: 48px;
+  border-radius: $border-radius;
+  background-color: $color-green;
+  border: none;
+  cursor: pointer;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & img{
+  padding-left: 10px;
+  }
+
+}
+
+.intro__search-img {
+margin: 0 16px;
+}
+
+.intro__Partnership{
+  width: 426px;
+  height: 96px;
+}
+
+.intro__Partnership{
+  margin-top: 32px;
+}
+
+.intro__Partnership-our{
+  color: #888B97;
+}
+
+.intro__Partnership-img {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.intro__inner{
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro__parent{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.intro__people{
+  background-color: $color-white;
+  padding: 24px;
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.intro__people-text{
+  margin-left: 16px;
+
+}
+
+.people{
+  padding: 0 0 4px;
+  font-weight: $font-weight-semiBld;
+
+}
+.people__p{
+  color: #68799F;
+  font-size: $font-size-small-text;
+
+}
+
+
