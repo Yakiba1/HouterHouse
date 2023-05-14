@@ -1,4 +1,4 @@
-@import "warielbels";
+@import "../warielbels";
 .nav__row {
   display: flex;
   justify-content: space-between;
@@ -19,10 +19,9 @@
 }
 
 .navigation__list {
-  ul {
+
     display: flex;
 
-  }
 }
 
 li {

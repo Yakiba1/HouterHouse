@@ -1,9 +1,9 @@
-@import "warielbels";
+@import "../warielbels";
 .intro__bg {
   height: 740px;
   width: 100%;
   position: absolute;
-  right: 0%;
+  right: 0;
   top: 0;
   z-index: -1;
 }
@@ -35,7 +35,6 @@ font-weight: $font-weight-semiBld;
 .intro__description {
   color: $color-gray;
   line-height: 1.75;
-
 }
 
 .intro__search {
@@ -133,5 +132,4 @@ margin: 0 16px;
   font-size: $font-size-small-text;
 
 }
-
 

@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/Yakiba1/HouterHouse#readme",
   "dependencies": {
+    "assets": "^3.0.1",
+    "block": "^0.2.1",
     "sass": "^1.62.1"
   }
 }
