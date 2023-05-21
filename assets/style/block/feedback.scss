@@ -1,0 +1,84 @@
+@import "../warielbels";
+
+
+.feedback {
+  ul {
+    display: flex;
+    margin-left: -50px;
+  }
+
+  &__intermediaries {
+    position: relative;
+    top: 40px;
+
+    &--centre {
+      margin-left: 56px;
+      margin-right: 56px;
+    }
+  }
+
+  &__intermediaries-info {
+    width: 612px;
+    background-color: $color-white;
+    padding: 32px;
+    border-radius: 32px;
+    position: absolute;
+    top: 256px;
+    left: 50px;
+
+    &-employee-padding-rating-review {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-employee {
+      display: flex;
+      align-items: center;
+      margin-left: -28px;
+    }
+
+    &-title {
+      color: $color-primary;
+      font-weight: $font-weight-semiBld;
+      font-size: $font-size-recommendation-number;
+    }
+
+    &-subtitle {
+      color: $color-gray;
+      font-size: $font-size-text;
+      font-weight: $font-weight-regular;
+      line-height: 24px;
+      margin-top: 16px;
+    }
+
+    &-employee-rating {
+      display: flex;
+      align-items: baseline;
+      p {
+        color: $color-recommendation-number;
+        font-size: $font-size-recommendation-number;
+        font-weight: $font-weight-semiBld;
+        margin-left: 16px;
+      }
+    }
+
+    &-employee-title {
+      color: $color-recommendation;
+      font-weight: $font-weight-medium;
+      font-size: $font-size-text;
+    }
+
+    &-employee-subtitle {
+     color: #888B97;
+      font-size: $font-size-text;
+      font-weight: $font-weight-medium;
+      margin-top: 4px;
+
+    }
+
+    &-employee-padding {
+      margin-bottom: 8px;
+    }
+  }
+}

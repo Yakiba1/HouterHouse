@@ -5,6 +5,7 @@
 @import "warielbels";
 @import "block/recommendation";
 @import "block/tour";
+@import "block/feedback";
 html, body {
   font-family: 'Lexend', sans-serif;
   font-size: 16px;
@@ -15,6 +16,19 @@ nav {
 }
 
   .general__header {
+
+    &--feedback {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 120px;
+
+      p {
+        margin-top: 8px;
+        margin-bottom: 12px;
+      }
+    }
+
     &-subtitle {
       display: flex;
       align-items: center;
@@ -35,13 +49,7 @@ nav {
       margin-top: 12px;
     }
   }
-
-
-.Heading {
-  color: $color-primary;
-  font-size: $font-size-title;
-  font-weight: $font-weight-semiBld;
-}
+  
 
 .container {
   max-width: 1230px;
