@@ -1,0 +1,16 @@
+
+.partners {
+  width: 426px;
+  height: 96px;
+  margin-top: 32px;
+
+  &__title {
+    color: #888B97;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

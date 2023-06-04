@@ -1,0 +1,150 @@
+@import "../variabels";
+@import "../mixins";
+
+.concerns {
+
+  ul {
+    margin-top: 40px;
+  }
+  button {
+    background-color: #10B981;
+    border: none;
+    border-radius: 32px;
+    color: #FFFFFF;
+    cursor: pointer;
+
+
+    width: 118px;
+    height: 46px;
+
+    margin-top: 24px;
+  }
+  &__works  {
+    display: flex;
+    &-unification {
+      margin-bottom: 40px;
+      margin-top: 40px;
+    }
+  }
+
+  &__people {
+    display: flex;
+    @include flex-vertical-container;
+    p {
+      margin-left: 16px;
+      color: $color-recommendation-number;
+      font-size: $font-size-text;
+      font-weight: $font-weight-regular;
+    }
+  }
+
+  &__time {
+    display: flex;
+    p {
+      color: #888B97;
+      font-weight: $font-weight-regular;
+      font-size: $font-size-text;
+      margin-left: 12px;
+    }
+  }
+  &__unification {
+    margin-left: 24px;
+  }
+
+  &__title {
+    text-transform: capitalize;
+    line-height: 32px;
+    color: $color-primary;
+    font-size: 18px;
+    margin-top: 12px;
+    margin-bottom: 16px;
+  }
+
+  &__block {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__divisions {
+    margin-top: 42px;
+    margin-left: 49px;
+    overflow: hidden;
+
+    p {
+      color: $color-gray;
+      font-weight: $font-weight-regular;
+      font-size: $font-size-text;
+      line-height: 24px;
+    }
+
+    h2 {
+      margin-top: 24px;
+      margin-bottom: 24px;
+      color: $color-primary;
+      font-size: $font-size-recommendation-text;
+      font-weight: $font-weight-medium;
+      text-transform: capitalize;
+    }
+  }
+
+  &__williamson {
+    display: flex;
+    @include flex-vertical-container;
+    margin-top: 24px;
+  }
+
+  &__subtitle {
+    color: $color-recommendation-number;
+    font-size: $font-size-text;
+    font-weight: $font-weight-regular;
+    margin-left: 16px;
+  }
+
+  &__watch {
+    display: flex;
+    @include flex-vertical-container;
+    margin-top: 16px;
+
+    p {
+      color: #888B97;
+      font-weight: $font-weight-regular;
+      font-size: $font-size-text;
+      margin-left: 12px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .concerns__works {
+    flex-direction: column;
+    @include flex-vertical-container;
+    margin-right: 0;
+    & > img:first-child {
+      width: 90%;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .concerns__block {
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+}
+
+@media (max-width: 500px) {
+  .concerns__unification{
+    margin-left: 0;
+    text-align: center;
+    display: contents;
+
+  }
+}
+
+@media (max-width: 500px) {
+  .concerns__people {
+   margin-top: 20px;
+
+  }
+}

@@ -1,15 +1,21 @@
-@import "../warielbels";
-
+@import "../variabels";
+@import "../mixins";
 
 .feedback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+  overflow: hidden;
   ul {
     display: flex;
-    margin-left: -50px;
+    margin-top: 40px;
+    padding-bottom: 130px;
+
   }
 
   &__intermediaries {
     position: relative;
-    top: 40px;
 
     &--centre {
       margin-left: 56px;
@@ -18,13 +24,14 @@
   }
 
   &__intermediaries-info {
-    width: 612px;
+    max-width: 612px;
     background-color: $color-white;
     padding: 32px;
     border-radius: 32px;
     position: absolute;
     top: 256px;
     left: 50px;
+    box-shadow: 0 9px 32px rgba(89, 92, 219, 0.05);
 
     &-employee-padding-rating-review {
       display: flex;
@@ -82,3 +89,37 @@
     }
   }
 }
+.pagination {
+  padding-bottom: 100px;
+  &__item {
+    background-color: #E0E3EB;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    cursor: pointer;
+    &:hover {
+      background-color: #3C4563;
+    }
+  }
+}
+
+
+@media (max-width: 992px) {
+  .feedback__intermediaries-info {
+    max-width: 612px;
+    background-color: #FFFFFF;
+    padding: 32px;
+    border-radius: 32px;
+    position: absolute;
+    top: 256px;
+    left: 50px;
+    box-shadow: 0 9px 32px rgba(89, 92, 219, 0.05);
+  }
+  .feedback__ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 151px;
+
+  }
+}
+

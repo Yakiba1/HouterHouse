@@ -1,4 +1,4 @@
-@import "../warielbels";
+@import "../variabels";
 .intro__bg {
   height: 740px;
   width: 100%;
@@ -45,6 +45,7 @@ font-weight: $font-weight-semiBld;
   display: flex;
   align-items: center;
   margin-top: 32px;
+  background-color: #FFFFFF;
 }
 
 .intro__search-input {
@@ -53,11 +54,12 @@ font-weight: $font-weight-semiBld;
   height: 22px;
   outline: none;
   margin-right: 16px;
+  background-color: transparent;
 
 }
 
 .intro__search-button {
-  width: 109px;
+  width: 106px;
   height: 48px;
   border-radius: $border-radius;
   background-color: $color-green;
@@ -77,25 +79,6 @@ font-weight: $font-weight-semiBld;
 margin: 0 16px;
 }
 
-.intro__Partnership{
-  width: 426px;
-  height: 96px;
-}
-
-.intro__Partnership{
-  margin-top: 32px;
-}
-
-.intro__Partnership-our{
-  color: #888B97;
-}
-
-.intro__Partnership-img {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .intro__inner{
   display: flex;
   justify-content: space-between;
@@ -104,7 +87,7 @@ margin: 0 16px;
 .intro__parent{
   display: flex;
   align-items: flex-end;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .intro__people{
@@ -133,3 +116,64 @@ margin: 0 16px;
 
 }
 
+@media (max-width: 1200px) {
+  .intro__search {
+    width: 416px;
+  }
+  .intro__search-input {
+    width: 240px;
+  }
+  .intro__parent {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}
+
+
+@media (max-width: 992px) {
+ .intro__inner {
+   flex-direction: column;
+   align-items: center;
+ }
+  .intro__frame {
+    text-align: center;
+  }
+  .intro__bg {
+    display: none;
+  }
+  .intro__search-input {
+    width: 316px;
+  }
+  .intro__search {
+    width: 496px;
+  }
+  .intro__parent {
+   flex-direction: row;
+  }
+
+}
+
+
+@media (max-width: 519px) {
+
+  .intro__title {
+   font-size:  35px;
+  }
+  .intro__search {
+    margin-left: 50px;
+  }
+  .intro__search {
+    width: 381px;
+  }
+  .intro__search-input {
+    width: 202px;
+  }
+  .intro__description {
+    font-size: 13px;
+  }
+  .partners__list {
+    width: 80%;
+    margin-left: 70px;
+  }
+}

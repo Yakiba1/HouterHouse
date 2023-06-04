@@ -1,4 +1,4 @@
-@import "../_warielbels.scss";
+@import "../_variabels.scss";
 
 
 .recommendation {
@@ -9,10 +9,13 @@
         justify-content: space-between;
         align-items: center;
         margin-bottom: 40px;
+        flex-wrap: wrap;
     }
     &__house {
         display: flex;
         justify-content: space-between;
+        overflow: hidden;
+        flex-wrap: wrap;
 
 
         p {
@@ -55,6 +58,8 @@
 
         &-frame {
             display: flex;
+            padding: 0 16px;
+            flex-wrap: wrap;
         }
 
             padding: 14px 24px;
@@ -103,4 +108,17 @@
     }
 }
 
+@media (max-width: 992px) {
+    .recommendation {
+        margin-top: 200px;
+    }
+    .recommendation__block {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .recommendation__house {
+        justify-content: center;
+        gap: 40px;
+    }
+}
 

@@ -1,52 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600&display=swap');
+@import "mixins";
 @import "block/intro";
 @import "reset";
 @import "block/nav";
-@import "warielbels";
+@import "variabels";
 @import "block/recommendation";
 @import "block/tour";
 @import "block/feedback";
+@import "block/concerns";
+@import "block/partners";
+@import "block/subscribe";
+@import "block/footer";
 html, body {
   font-family: 'Lexend', sans-serif;
   font-size: 16px;
 }
 
-nav {
-  margin-top: 40px;
-}
+  .general {
 
-  .general__header {
-
-    &--feedback {
-      display: flex;
-      align-items: center;
+    &--vertically {
+      @include flex-vertical-container;
       flex-direction: column;
-      margin-top: 120px;
-
-      p {
-        margin-top: 8px;
-        margin-bottom: 12px;
+      svg {
+        margin-bottom: 10px;
       }
     }
 
-    &-subtitle {
-      display: flex;
-      align-items: center;
+    &__paragraph {
+      margin-top: 16px;
+      color: $color-gray;
+      font-size: $font-size-medium-text;
+      line-height: 28px;
+      margin-left: 16px;
+    }
+
+    &__suptitle {
+      @include flex-vertical-container;
 
       color: $color-yellow;
       font-weight: $font-weight-medium;
       font-size: $font-size-text;
 
-      margin-left: -16px;
        svg {
         margin-right: 8px;
       }
     }
-    &-title {
+    &__title {
       font-size: $font-size-title;
       color: $color-primary;
       font-weight: $font-weight-semiBld;
       margin-top: 12px;
+      text-align: center;
+      text-transform: capitalize;
+      margin-left: 16px;
     }
   }
   
@@ -57,4 +63,22 @@ nav {
   margin-right: auto;
   padding-right: 15px;
   padding-left: 15px;
+  overflow: hidden;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: none;
+  }
 }

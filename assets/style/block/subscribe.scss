@@ -1,0 +1,72 @@
+@import "../variabels";
+
+
+
+.subscribe {
+  margin-top: 128px;
+  &__union {
+    background-image: url("~assets/img/subscribe/subscribe.jpg");
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 72px;
+    border-radius: 32px;
+  }
+
+
+  &__title {
+    color: $color-primary;
+    font-weight: $font-weight-semiBld;
+    font-size: $font-size-title;
+    text-transform: capitalize;
+    text-align: center;
+
+  }
+
+  &__input {
+    width: 496px;
+    height: 56px;
+    border-radius: 32px;
+    border: 1px solid #E0E3EB;
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+    input {
+      border: none;
+      width: 316px;
+      height: 22px;
+      outline: none;
+      margin-right: 16px;    }
+  }
+
+  &__button {
+    width: 109px;
+    height: 48px;
+    border-radius: 32px;
+    background-color: #10B981;
+    border: none;
+    cursor: pointer;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+}
+
+@media (max-width: 603px) {
+  .subscribe__title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .subscribe__title {
+    font-size: 19px;
+  }
+  .subscribe__union {
+    background-image: none;
+  }
+
+}
